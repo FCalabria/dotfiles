@@ -1,0 +1,13 @@
+[alias]
+ unstage = reset HEAD --
+ amend = commit --amend --no-edit
+ ups = !git add . && git amend && git push --force
+ pushnew = push -u origin HEAD
+ updateAll = !git stash -u && git checkout main && git fetch --all --prune && git pull && git checkout -
+ hist = log --pretty=format:'%ad | %Cgreen %s%d %Creset [%an] %Cblue%h' --graph --date=short -n 10
+ tree = log --oneline --all --graph --decorate
+ ch = checkout
+ br = branch
+ co = commit
+[pull]
+ rebase = true
