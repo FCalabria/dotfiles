@@ -11,3 +11,6 @@
  co = commit
 [pull]
  rebase = true
+[user]
+	name = Paqui Calabria
+	email = paqui.calabria@shopify.com
